@@ -174,4 +174,13 @@ document.addEventListener('DOMContentLoaded', function() {
         delay: 0.5,
         ease: "power3.out"
     });
+    
+});
+document.addEventListener('DOMContentLoaded', () => {
+    const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+    const navLinks = document.querySelector('.nav-links');
+
+    mobileMenuBtn.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+    });
 });

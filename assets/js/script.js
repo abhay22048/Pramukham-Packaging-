@@ -212,7 +212,8 @@ document.addEventListener('DOMContentLoaded', function() {
             this.style.boxShadow = '0 4px 6px rgba(0, 0, 0, 0.1)';
         });
     });
-
+ 
+    //Loader
     window.addEventListener("load", () => {
         const loader = document.getElementById("loader");
         loader.style.opacity = "0";
