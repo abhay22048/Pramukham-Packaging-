@@ -213,6 +213,14 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-
+    window.addEventListener("load", () => {
+        const loader = document.getElementById("loader");
+        loader.style.opacity = "0";
+        loader.style.transition = "opacity 2s ease";
+        setTimeout(() => {
+            loader.style.display = "none";
+            document.body.classList.add("animate-site");
+        }, 500);
+    });
 
 });
