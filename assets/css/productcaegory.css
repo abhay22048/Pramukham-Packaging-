@@ -90,7 +90,7 @@ header {
     cursor: pointer;
     font-size: 24px;
 }
-.mobile-menu-btn {
+/* .mobile-menu-btn {
     display: none;
 }
 
@@ -112,7 +112,7 @@ header {
         text-align: center;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     }
-}
+} */
 
 /* Categories Section Styles */
 .categories-section {
