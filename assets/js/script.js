@@ -67,31 +67,48 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // Contact form submission
+    
     const contactForm = document.getElementById('contactForm');
     if (contactForm) {
-        contactForm.addEventListener('submit', function(e) {
+        contactForm.addEventListener('submit', function (e) {
             e.preventDefault();
-            
-            // You would typically send form data to a server here
-            const formData = {
+    
+            const data = {
                 name: document.getElementById('name').value,
                 email: document.getElementById('email').value,
-                subject: document.getElementById('subject').value,
+                contact: document.getElementById('Contact').value,
                 message: document.getElementById('message').value
             };
-            
-            // Simulate form submission
+    
             const submitBtn = contactForm.querySelector('button[type="submit"]');
             submitBtn.textContent = 'Sending...';
-            
-            setTimeout(() => {
-                alert('Thank you for your message! We will get back to you soon.');
+    
+            fetch('https://script.google.com/macros/s/AKfycbz_nbX0Y8fpBqoZJ1DgciP7uC8T5b0BWJyoqSYTw9gSru4N7XDdpx77mezWyh5bMMOB/exec', {
+                method: 'POST',
+                body: JSON.stringify(data),
+                mode: 'no-cors',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
+                }
+            })
+            .then(() => {
+                alert('Thank you for your message!');
                 contactForm.reset();
                 submitBtn.textContent = 'Send Message';
-            }, 1500);
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                alert('Oops! Something went wrong.');
+                submitBtn.textContent = 'Send Message';
+            });
         });
     }
+    
 
+
+    
+    
     // Newsletter form submission
     const newsletterForm = document.querySelector('.newsletter-form');
     if (newsletterForm) {

@@ -13,10 +13,10 @@
         <div class="container">
             <nav class="navbar">
                 <div class="logo">
-                    <img src="/images/pp-png.png" alt="PP Logo">
+                    <a href="/"><img src="/images/pp-png.png" alt="PP Logo"></a>
                 </div>
                 <ul class="nav-links">
-                    <li><a href="/index.html#products" >Home</a></li>
+                    <li><a href="/">Home</a></li>
                     <li><a href="/index.html#products" class="active">Products</a></li>
                     <li><a href="/index.html#about">About</a></li>
                     <li><a href="/index.html#contact">Contact</a></li>
@@ -30,7 +30,7 @@
 
     <!-- Product Categories Section -->
     <section class="categories-section">
-        <div class="container">
+        <div class="container"> 
             <h1 class="section-title">Printing box Categories</h1>
             
             <div class="categories-container">
@@ -42,13 +42,13 @@
                     </div>
                     <div class="subcategories" id="flexo-subcategories">
                         <div class="subcategory-item">
-                            <img src="/images/3ply grid (2).jpg" alt="Single Color Flexo Printing Box">
+                            <img src="/images/Printing Box/Flexo Printing Box/Singal Colour Flexo Printing Box/Slider 2.jpg" alt="Single Color Flexo Printing Box">
                             <h3>Single Color Flexo Printing Box</h3>
                             <p>Cost-effective packaging solution with single color branding.</p>
                             <a href="category page/Printing Category-1.html" class="btn">Learn More</a>
                         </div>
                         <div class="subcategory-item">
-                            <img src="/images/3ply grid (2).jpg" alt="Two Color Flexo Printing Box">
+                            <img src="/images/Printing Box/Flexo Printing Box/Two Colour Flexo Printing Box/Slider 2.jpg" alt="Two Color Flexo Printing Box">
                             <h3>Two Color Flexo Printing Box</h3>
                             <p>Enhanced visual appeal with dual color printing options.</p>
                             <a href="category page/Printing Category-2.html" class="btn">Learn More</a>
@@ -64,20 +64,20 @@
                     </div>
                     <div class="subcategories" id="offset-subcategories">
                         <div class="subcategory-item">
-                            <img src="/images/3ply grid (2).jpg" alt="Four Color Offset Printing & Lamination Box">
-                            <h3>Four Color Offset Printing & Lamination Box</h3>
+                            <img src="/images/Printing Box/Offset Printing & Lamination Box/Singal Colour Offset Printing & Lamination Box/Grid 121.jpg" alt="Single Color Offset Printing & Lamination Box">
+                            <h3>Single Color Offset Printing & Lamination Box</h3>
                             <p>Premium packaging with vibrant four-color printing and protective lamination.</p>
                             <a href="category page/Printing Category-3.html" class="btn">Learn More</a>
                         </div>
                         <div class="subcategory-item">
-                            <img src="/images/3ply grid (2).jpg" alt="Single Color Offset Printing & Lamination Box">
-                            <h3>Single Color Offset Printing & Lamination Box</h3>
+                            <img src="/images/Printing Box/Offset Printing & Lamination Box/Two Colour Offset Printing & Lamination Box/Slider 103.jpg" alt="Two Color Offset Printing & Lamination Box">
+                            <h3>Two Color Offset Printing & Lamination Box</h3>
                             <p>Professional packaging with single color print and durable lamination.</p>
                             <a href="category page/Printing Category-4.html" class="btn">Learn More</a>
                         </div>
                         <div class="subcategory-item">
-                            <img src="/images/3ply grid (2).jpg" alt="Two Color Offset Printing & Lamination Box">
-                            <h3>Two Color Offset Printing & Lamination Box</h3>
+                            <img src="/images/Printing Box/Offset Printing & Lamination Box/Four Colour Offset Printing & Lamination Box/Grid 128.jpg" alt="Four Color Offset Printing & Lamination Box">
+                            <h3>Four Color Offset Printing & Lamination Box</h3>
                             <p>Stylish dual-color printed boxes with quality lamination finish.</p>
                             <a href="category page/Printing Category-5.html" class="btn">Learn More</a>
                         </div>
@@ -88,15 +88,37 @@
     </section>
 
     <!-- Footer -->
-    <div id="footer-container"></div>
-
-<script>
-  fetch('/footer.html')
-    .then(res => res.text())
-    .then(data => {
-      document.getElementById('footer-container').innerHTML = data;
-    });
-</script>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="/"><img src="/images/PP Logo.jpg" alt="PP Logo"></a>
+                    <!-- <p><b>Pramukham Packaging </b></p> -->
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="../index.html#products">Products</a></li>
+                        <li><a href="../index.html#about">About</a></li>
+                        <li><a href="../index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h3>Social Media</h3>
+                    <div class="social-media">
+                        <a href="https://www.facebook.com/people/Pramukham-Packaging/100079326797299/?rdid=umEABFcujDHa7ssO&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F15GRBPyAvs%2F" class="social-icon" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <!-- <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a> -->
+                        <a href="https://www.instagram.com/pramukham_packaging?igsh=MXBwejg0NWJyOGM1OA==" class="social-icon" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <!-- <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a> -->
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Pramukham Packaging . All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
